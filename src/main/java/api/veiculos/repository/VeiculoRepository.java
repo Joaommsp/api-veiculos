@@ -1,6 +1,6 @@
 package api.veiculos.repository;
 
-import api.veiculos.entity.VeiculoEntity;
+import api.veiculos.model.VeiculoEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
