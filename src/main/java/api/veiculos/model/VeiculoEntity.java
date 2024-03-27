@@ -14,7 +14,7 @@ import lombok.Setter;
 public class VeiculoEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
     @Column(name = "marca", nullable = false, length = 50)

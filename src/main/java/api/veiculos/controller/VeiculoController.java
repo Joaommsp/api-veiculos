@@ -26,6 +26,11 @@ public class VeiculoController {
         return service.buscarVeiculoPorId(id);
     }
 
+    @GetMapping("/placa={placa}")
+    public VeiculoEntity buscarVeiculoPorPlaca(@PathVariable String placa) {
+    return service.encontrarPorPlaca(placa);
+    }
+
     @PostMapping
     public VeiculoEntity salvarVeiculo(@RequestBody VeiculoEntity novoVeiculo) {
         return service.salvar(novoVeiculo);
